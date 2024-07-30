@@ -4,6 +4,13 @@
   "description": "Description will go into a meta tag in <head />",
   "blocks": [
     {
+      "title": "Test",
+      "subtitle": "Test",
+      "document": "docs/intro.mdx",
+      "documentLabel": "Test",
+      "_template": "hero"
+    },
+    {
       "document": "docs/intro.mdx",
       "documentLabel": "Docusaurus Tutorial - 5min ⏱️",
       "_template": "hero"
