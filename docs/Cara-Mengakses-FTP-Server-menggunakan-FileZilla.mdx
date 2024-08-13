@@ -1,0 +1,69 @@
+---
+title: Cara Mengakses FTP Server menggunakan FileZilla
+tags:
+  - FTP
+  - FileZilla
+---
+
+FileZilla adalah salah satu aplikasi FTP client paling populer dan banyak digunakan di berbagai sistem operasi. Sebagai aplikasi open-source dan cross-platform, FileZilla menawarkan kemudahan dalam mengelola file melalui protokol FTP. FileZilla juga menyediakan versi Pro atau berbayar dengan fitur yang tentunya lebih komprehensif.
+
+Dalam artikel ini, kami akan memberikan panduan dalam mengakses FTP server menggunakan FileZilla. FileZilla ini kompatibel dengan Windows, macOS, Linux, dan banyak sistem operasi lainnya, sehingga Anda bisa mengelola file di berbagai platform tanpa kendala.
+
+Untuk informasi lebih lanjut tentang FileZilla, termasuk cara instalasi, Anda dapat mengunjungi tautan berikut:   Apa itu FileZilla? Bagaimana Cara Menginstalnya? 
+
+Yuk simak panduan ini untuk mendapatkan pemahaman lengkap tentang cara menggunakan FileZilla dalam mengakses FTP server. Selamat membaca!
+
+Membuka Aplikasi FileZilla
+
+Tahap pertama adalah membuka aplikasi FileZilla di komputer atau PC lokal Anda. Pastikan Anda telah mengunduh dan menginstal FileZilla dari situs resminya jika belum.
+
+Menambahkan Site Baru
+
+Setelah FileZilla terbuka, akan muncul workspace atau area kerja utamanya. Untuk untuk membuat koneksi ke FTP server, klik ikon site manager pada pojok kiri atas seperti yang tampak pada Gambar 1. 
+
+![](/img/FileZilla/site_manager.png)Gambar 1. Workspace FileZilla
+
+Selanjutnya, di dalam Site Manager, tambahkan pengaturan koneksi FTP sesuai dengan kebutuhan Anda.&#x9;
+
+![](/img/FileZilla/connect.png)Gambar 2. Pengaturan Site Manager
+
+Untuk membuat site baru, klik tombol New site. Setelah itu, ketikkan nama site yang akan dibuat. Pada panduan ini, kami menggunakan FTP server dari Kilat Hosting 2.0. Anda bisa mengganti nama site dengan cara mengklik tombol Rename jika diperlukan.
+
+Untuk pengaturan akses FTP server, bisa dengan menggunakan contoh seperti berikut:
+
+* Protocol: FTP - File Transfer Protocol
+* Host: Masukkan nama domain atau alamat IP server FTP Anda
+* Port: Masukkan port yang digunakan untuk FTP, biasanya Port 21 
+* Encryption: Pilih Use explicit FTP over TLS if available. Opsi ini mencoba menggunakan TLS untuk koneksi yang aman jika tersedia
+* Logon Type: Normal
+* User: Masukkan nama pengguna FTP
+* Password: Masukkan kata sandi untuk pengguna FTP
+
+Sebagai informasi, pada FileZilla terdapat empat opsi enkripsi menggunakan koneksi TLS, yaitu:
+
+1. Use explicit FTP over TLS if available: Menggunakan TLS jika tersedia, jika tidak, maka FileZilla akan menggunakan mode insecure plain FTP.
+2. Require explicit FTP over TLS: Memaksa penggunaan TLS, jika gagal, akses akan ditolak. Opsi ini merupakan opsi yang paling aman, karena distandarisasi dokumen RFC 4217.
+3. Use implicit FTP over TLS: Opsi lama dan tidak direkomendasikan karena memiliki ekstensi yang tidak standar.
+4. Only use plain FTP (insecure): Menggunakan koneksi FTP tanpa enkripsi, yang berarti data dikirimkan dalam format teks biasa. Opsi ini tidak aman karena informasi, termasuk kredensial login, dapat dengan mudah diakses oleh pihak ketiga selama transmisi. Opsi ini hanya disarankan untuk situasi di mana keamanan tidak menjadi prioritas atau untuk penggunaan di jaringan yang sepenuhnya terpercaya.
+
+Setelah semua pengaturan selesai, klik tombol Connect untuk mencoba menghubungkan ke server FTP Anda.
+
+![](/img/FileZilla/cert.png)Gambar 3. Konfirmasi Sertifikat SSL
+
+Bila Anda menggunakan Kilat Hosting sebagai FTP server, Anda mungkin akan melihat pesan “The server’s certificate is uknown..”. Pesan ini merupakan bagian dari proses standar di FileZilla untuk mengonfirmasi sertifikat SSL. Oleh karenanya, Anda tidak perlu khawatir mengenai pesan tersebut. Adapun common name sertifikat yang digunakan adalah tipe SSL Wildcard yaitu \*.kilathosting.id. 
+
+Agar kedepannya notifikasi sertifikat SSL tersebut tidak muncul kembali, Anda dapat mencentang pada kotak Always trust certificate in future sessions dan klik Ok.
+
+Setelah koneksi berhasil, Anda akan melihat daftar direktori dan fie di server FTP, seperti yang ditunjukkan dalam Gambar 4. Pada sisi kiri, Anda akan melihat data dari komputer lokal Anda, sedangkan pada sisi kanan, merupakan data dari server FTP.![](/img/FileZilla/konek_berhasil.png)Gambar 4. Koneksi ke FTP Server Berhasil
+
+3\. Mengakhiri Koneksi FTP Server
+
+Untuk mengakhiri koneksi FTP, Anda dapat mengklik ikon Disconnect yang ada di toolbar FileZilla, seperti yang terlihat pada Gambar 5.![](/img/FileZilla/disconnect.png)Gambar 5. Klik Ikon Disconnect pada FileZilla
+
+Jika berhasil, akan muncul status “Disconnected from server” yang menandakan bahwa Anda telah keluar dari koneksi server.
+
+![](/img/FileZilla/disc_berhasil.png)Gambar 6. Mengakhiri Koneksi FTP Berhasil
+
+Demikian panduan basis pengetahuan kami mengenai bagaimana cara akses FTP server menggunakan aplikasi FileZilla. Dengan mengikuti panduan ini, Anda dapat dengan mudah mengkoneksikan perangkat lokal Anda ke FTP server untuk mengelola file. FileZilla menyediakan antarmuka user-friendly dan berbagai fitur yang memudahkan manajemen file di berbagai sistem operasi. 
+
+Jika Anda mengalami kendala atau memiliki pertanyaan lebih lanjut terkait akses FTP server menggunakan FileZIlla ini, tim Support CloudKilat selalu siap sedia memberikan pelayanan terbaik 24/7 untuk membantu Anda. Anda dapat menghubungi kami dengan mengirim email ke info\@cloudkilat.com atau dengan membuka tiket bantuan melalui Portal Client CloudKilat.
