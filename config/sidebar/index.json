@@ -52,13 +52,13 @@
       "link": "none",
       "items": [
         {
-          "document": "docs/Cara-Mengakses-FTP-Server-menggunakan-FileZilla.mdx",
-          "_template": "doc"
-        },
-        {
           "title": "Level 2",
           "link": "none",
           "items": [
+            {
+              "document": "docs/Cara-Mengakses-FTP-Server-menggunakan-FileZilla.mdx",
+              "_template": "doc"
+            },
             {
               "title": "Level 3",
               "link": "none",
